@@ -181,7 +181,7 @@ const LoginModal: React.FC<LoginModalProps> = ({
                   />
                 </div>
                 <p className="text-sm text-gray-500 mt-2 text-center">
-                  Didn't receive the code?
+                  Didn&apos;t receive the code?
                   <button
                     type="button"
                     className="text-purple-600 hover:text-purple-700 font-medium ml-1"

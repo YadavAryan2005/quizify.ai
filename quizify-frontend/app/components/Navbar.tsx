@@ -1,7 +1,6 @@
 "use client"
 import React, { useState } from 'react';
-import { Brain, Menu, X, Sparkles, Trophy, Users } from 'lucide-react';
-import Link from 'next/link';
+import { Brain, Menu, X, Sparkles } from 'lucide-react';
 import { useLogin } from '../context/LoginContext';
 
 const Navbar: React.FC = () => {
