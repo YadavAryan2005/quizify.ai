@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react';
-import { BookOpen, Play, RotateCcw } from 'lucide-react';
+import { BookOpen, Play } from 'lucide-react';
 import { Quiz, QuizConfig } from '../types/quiz'
 import QuizPlayer from './QuizPlayer';
 import QuizResults from './QuizResults';
