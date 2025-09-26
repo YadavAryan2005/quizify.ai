@@ -82,7 +82,7 @@ app.post("/user/login", async (req, res) => {
   }
 });
 
-app.post("/generateQuiz",authMiddleware,async(req,res)=>{
+app.post("/generateQuiz",async(req,res)=>{
   try {
     const {topic,noOfQuestion}=req.body;
     const response=await runGemini(topic,noOfQuestion);

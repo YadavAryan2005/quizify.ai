@@ -29,6 +29,11 @@ async function generateQuiz(topic: string, noOfQuestion: number): Promise<Quiz> 
         body: JSON.stringify({ topic,noOfQuestion }),
       });
       const geminiResponse = await response.json();
+      // if(geminiResponse.status===401)
+      // {
+      //   localStorage.removeItem("token");
+
+      // }
       const questions=geminiResponse.generatedQuiz;
   return {
     topic,

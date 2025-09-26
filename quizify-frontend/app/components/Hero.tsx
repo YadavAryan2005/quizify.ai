@@ -3,11 +3,8 @@ import { ArrowRight, Zap, Target, Clock } from "lucide-react";
 import Link from "next/link";
 import { useLogin } from "../context/LoginContext";
 
-interface HeroProps {
-  onGetStarted: () => void;
-}
 
-const Hero: React.FC<HeroProps> = ({ onGetStarted }) => {
+const Hero = () => {
   const {authRoute} =useLogin();
   return (
     <section
