@@ -20,7 +20,7 @@ const QuizMaker: React.FC = () => {
 
 async function generateQuiz(topic: string, noOfQuestion: number): Promise<Quiz> {
   const token=localStorage.getItem("token")
-  const response = await fetch("http://localhost:5000/generateQuiz", {
+  const response = await fetch("https://quizify-ai-1.onrender.com/generateQuiz", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
