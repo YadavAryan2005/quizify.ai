@@ -34,7 +34,7 @@ export const LoginProvider = ({ children }: LoginProviderProps) => {
 
   const authRoute=(path:string)=>{
    const token=localStorage.getItem("token");
-   if(!token)
+   if(token)
    {
      router.push(path);
    }
