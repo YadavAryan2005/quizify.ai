@@ -15,7 +15,7 @@ const QuizMaker: React.FC = () => {
   };
 
   const handleQuestionCountChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setConfig(prev => ({ ...prev, questionCount: parseInt(e.target.value) }));
+    setConfig(prev => ({ ...prev, questionCount: Number.isNaN(parseInt(e.target.value))?0:parseInt(e.target.value)}));
   };
 
 async function generateQuiz(topic: string, noOfQuestion: number): Promise<Quiz> {
